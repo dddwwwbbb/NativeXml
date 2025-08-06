@@ -33,7 +33,7 @@ var
   ADoc: <A HREF="000155.html" CLASS="link">TNativeXml</A>;
 begin
   Memo1.Lines.Clear;
-  ADoc := <A HREF="000170.html" CLASS="link">TNativeXml.Create</A>;
+  ADoc := <A HREF="000170.html" CLASS="link">TNativeXml.Create</A>(nil);
   try
     ADoc.OnNodeNew    := DoNodeNew;
     ADoc.OnNodeLoaded := DoNodeLoaded;
