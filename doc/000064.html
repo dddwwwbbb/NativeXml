@@ -79,7 +79,7 @@ Loading XML files with extended characters</DIV>
 <PRE CLASS="code">
 function CreateXMLAndLoadFromFile(AFilename: string): <A HREF="000155.html" CLASS="link">TNativeXml</A>;
 begin
-  Result := <A HREF="000170.html" CLASS="link">TNativeXml.Create</A>;
+  Result := <A HREF="000170.html" CLASS="link">TNativeXml.Create</A>(nil);
   Result.LoadFromFile(AFilename);  
 end;
 </PRE></DIV>
@@ -90,7 +90,7 @@ end;
 <PRE CLASS="code">
 function CreateXMLAndLoadFromStream(S: TStream): <A HREF="000155.html" CLASS="link">TNativeXml</A>;
 begin
-  Result := <A HREF="000170.html" CLASS="link">TNativeXml.Create</A>;
+  Result := <A HREF="000170.html" CLASS="link">TNativeXml.Create</A>(nil);
   Result.LoadFromStream(S);  
 end;
 </PRE></DIV>
