@@ -44,6 +44,7 @@ var
 begin
   // Create new document with a rootnode called &quot;Root&quot;
   ADoc := <A HREF="000172.html" CLASS="link">TNativeXml.CreateName</A>('Root');
+  ADoc.Charset := 'windows-1252';
   try
     // Add a subnode with name &quot;Customer&quot;
     with ADoc.Root.NodeNew('Customer') do begin
